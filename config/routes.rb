@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'messages/index'
+
   get 'dengonban', to: 'dengonban#index'
   post 'dengonban', to: 'dengonban#index'
   get 'dengonban/index'

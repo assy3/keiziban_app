@@ -1,0 +1,23 @@
+<h1>Messages#index</h1>
+<p><%= @mag %></p>
+<pre>
+<table>
+    <tr>
+      <tr>ID</tr><tr>name</tr><tr>mail</tr><tr>context</tr>
+    </tr>
+    <% @data.each do |obj| %>
+    <tr>
+      <td><%= obj.id %></td>
+      <td><%= obj.name %></td>
+      <td><%= obj.email %></td>
+      <td><%= obj.context %></td>
+
+
+    </tr>
+    <% end %>
+
+
+
+
+</table>
+</pre>
