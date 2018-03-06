@@ -3,14 +3,12 @@
 <pre>
 <table>
     <tr>
-      <tr>ID</tr><tr>name</tr><tr>mail</tr><tr>context</tr>
+      <tr>ID</tr><tr>name</tr>
     </tr>
     <% @data.each do |obj| %>
     <tr>
       <td><%= obj.id %></td>
-      <td><%= obj.name %></td>
-      <td><%= obj.email %></td>
-      <td><%= obj.context %></td>
+      <td><a href="/messages/<%= obj.id %>"><%= obj.name %></a></td>
 
 
     </tr>
