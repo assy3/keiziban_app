@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  get 'messages/add'
+  post 'messages/add', to: 'messages#create'
   get "messages", to: 'messages#index'
   get "messages/:id", to: 'messages#show'
+
+
 
   get 'dengonban', to: 'dengonban#index'
   post 'dengonban', to: 'dengonban#index'
